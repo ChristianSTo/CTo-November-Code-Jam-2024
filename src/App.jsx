@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import "./App.css";
+import About from "../src/components/About.jsx";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <div className="page__content"></div>
         <p>HELLLO</p>
       </div>
+      <About />
     </>
   );
 }
