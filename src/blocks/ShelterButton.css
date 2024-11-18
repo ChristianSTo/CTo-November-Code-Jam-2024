@@ -1,0 +1,51 @@
+.shelter-button {
+  position: relative;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0px;
+  width: 150px;
+  max-height: 50px;
+  height: 230%;
+  border: none;
+  border-radius: 15px 15px 0px 0px;
+  margin: 0px auto;
+  padding: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.shelter-button:hover {
+  cursor: pointer;
+  max-height: 80px;
+  bottom: 30px;
+}
+
+.shelter-button :focus {
+  outline: none;
+}
+
+.shelter-button__name {
+  position: absolute;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  margin: 0px;
+  padding: 0px 5px;
+  width: 115px;
+  height: 30px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+@media (max-width: 600px) {
+  .shelter-button {
+    width: 75px;
+  }
+  .shelter-button__name {
+    width: 45px;
+  }
+}

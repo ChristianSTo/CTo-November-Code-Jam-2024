@@ -1,16 +1,19 @@
 import { useState } from "react";
 import Header from "../src/components/Header";
 
+import Warmth from "../src/components/Warmth.jsx";
+import Shelter from "../src/components/Shelter.jsx";
+import Footer from "../src/components/Footer.jsx";
+
 import "./App.css";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="page">
-        <div className="page__content"></div>
-        <p>HELLLO</p>
-      </div>
+      <Shelter />
+      <Warmth />
+      <Footer />
     </>
   );
 }
