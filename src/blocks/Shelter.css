@@ -1,0 +1,143 @@
+.shelter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17120f;
+  margin: 0px;
+  padding: 25px 20px;
+}
+.shelter__grid {
+  margin: 0px;
+  padding: 0px;
+}
+
+.shelter__buttons {
+  position: relative;
+  max-width: 450px;
+  height: 50px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: auto;
+  margin: 50px auto 0px;
+  padding: 0px;
+  box-sizing: content-box;
+}
+
+.shelter__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
+  width: 100%;
+  height: 400px;
+  background-color: #f0f8ff;
+}
+
+.shelter__screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.shelter__info {
+  width: 300px;
+  height: 300px;
+  background-color: #f0f8ff;
+  border-radius: 25px;
+  margin: 0px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.shelter__image {
+  width: 300px;
+  height: 300px;
+  background-color: #f0f8ff;
+  border-radius: 25px;
+  margin: 0px;
+  padding: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.shelter__info-title {
+  font-size: 20px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.shelter__info-paragraph {
+  font-size: 16px;
+  text-align: left;
+  margin: 15px auto;
+}
+
+@media (max-width: 800px) {
+  .shelter {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  .shelter__title {
+    font-size: 20px;
+    max-width: 270px;
+    padding: 15px;
+  }
+
+  .shelter__buttons {
+    grid-template-columns: repeat(auto-fill, 100px);
+    max-width: 300px;
+    margin: 25px auto 0px;
+  }
+
+  .shelter__container {
+    max-width: 380px;
+    height: 200px;
+  }
+
+  .shelter__screen {
+    gap: 10px;
+  }
+
+  .shelter__info {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+
+  .shelter__image {
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 340px) {
+  .shelter__title {
+    font-size: 16px;
+    max-width: 220px;
+    padding: 10px;
+  }
+
+  .shelter__screen {
+    gap: 5px;
+  }
+
+  .shelter__info {
+    width: 120px;
+    height: 120px;
+  }
+
+  .shelter__image {
+    width: 120px;
+    height: 120px;
+  }
+}

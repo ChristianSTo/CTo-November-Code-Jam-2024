@@ -1,0 +1,38 @@
+.footer {
+  background-color: #833c62;
+  margin: 0px;
+  padding: 25px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer__link {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  background-color: #f0f8ff;
+  margin: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.footer__link:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
+
+@media (max-width: 450px) {
+  .footer__link {
+    font-size: 13px;
+  }
+}
