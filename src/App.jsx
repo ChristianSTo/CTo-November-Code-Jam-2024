@@ -2,15 +2,13 @@ import { useState } from "react";
 
 import "./App.css";
 import About from "../src/components/About.jsx";
+import Organization from "../src/components/Organization.jsx";
 
 function App() {
   return (
     <>
-      <div className="page">
-        <div className="page__content"></div>
-        <p>HELLLO</p>
-      </div>
       <About />
+      <Organization />
     </>
   );
 }
