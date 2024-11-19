@@ -9,15 +9,15 @@ function ShelterButton({ name, handleOnClick, color }) {
   useEffect(() => {
     if (name === "Why" && color === "Why") {
       setButtonStyle({
-        backgroundColor: "#CC5A3D",
+        backgroundColor: "#4F000B",
       });
     } else if (name === "How" && color === "How") {
       setButtonStyle({
-        backgroundColor: "#833C62",
+        backgroundColor: "#CE4257",
       });
     } else if (name === "Where" && color === "Where") {
       setButtonStyle({
-        backgroundColor: "#7D2020",
+        backgroundColor: "#FF7F51",
       });
     } else {
       setButtonStyle({

@@ -15,6 +15,7 @@
   padding: 10px;
   overflow: hidden;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 .shelter-button:hover {
@@ -23,7 +24,7 @@
   bottom: 30px;
 }
 
-.shelter-button :focus {
+.shelter-button:focus {
   outline: none;
 }
 
@@ -41,10 +42,16 @@
   border-radius: 5px 5px 0px 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .shelter-button {
     width: 75px;
   }
+
+  .shelter-button:hover {
+    max-height: 60px;
+    bottom: 10px;
+  }
+
   .shelter-button__name {
     width: 45px;
   }
