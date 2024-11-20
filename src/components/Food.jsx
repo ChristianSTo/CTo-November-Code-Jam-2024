@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../blocks/Food.css";
 
 function FoodSection() {
@@ -29,38 +29,70 @@ function FoodSection() {
     },
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % resources.length);
+  };
+
+  const handlePrevious = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + resources.length) % resources.length
+    );
+  };
+
   return (
     <section className="food">
-      <h2 className="food__title title">Feeding the community</h2>
-      <p className="food__subtitle">
-        Celebrate Thanksgiving by connecting with local food resources and
-        spreading joy!
-      </p>
-      <ul className="food__resources">
-        {resources.map((resource) => (
-          <li key={resource.id} className="food__resource-card">
-            <h3 className="food__resource-name">{resource.name}</h3>
-            <p className="food__resource-description">{resource.description}</p>
+      <div className="food__container">
+        {/* Left side: Card Carousel */}
+        <div className="food__carousel">
+          <button
+            className="food__button food__button-prev"
+            onClick={handlePrevious}
+          >
+            &#9664;
+          </button>
+
+          <div className="food__card">
+            <h3 className="food__resource-name">
+              {resources[currentIndex].name}
+            </h3>
+            <p className="food__resource-description">
+              {resources[currentIndex].description}
+            </p>
             <p className="food__resource-location">
-              <strong>Location:</strong> {resource.location}
+              <strong>Location:</strong> {resources[currentIndex].location}
             </p>
             <p className="food__resource-contact">
-              <strong>Contact:</strong> {resource.contact}
+              <strong>Contact:</strong> {resources[currentIndex].contact}
             </p>
             <p className="food__resource-hours">
-              <strong>Hours:</strong> {resource.hours}
+              <strong>Hours:</strong> {resources[currentIndex].hours}
             </p>
-            <button
-              className="food__resource-button"
-              onClick={() =>
-                alert(`You clicked on ${resource.name}! Happy Thanksgiving!`)
-              }
-            >
-              More Info
-            </button>
-          </li>
-        ))}
-      </ul>
+          </div>
+
+          <button
+            className="food__button food__button-next"
+            onClick={handleNext}
+          >
+            &#9654;
+          </button>
+        </div>
+
+        {/* Right side: Title and Subtitle */}
+        <div className="food__details">
+          <div className="food__intro">
+            <h2 className="food__title title">
+              Feeding <br />
+              the <br /> Community
+            </h2>
+            <p className="food__subtitle">
+              Celebrate Thanksgiving by connecting with local food resources and
+              spreading joy!
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
