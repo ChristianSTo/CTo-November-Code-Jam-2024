@@ -23,6 +23,8 @@
   padding: 5px;
   border-radius: 10px;
   transition: all 0.3s ease;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
 }
 
 .footer__link:hover {
