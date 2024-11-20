@@ -25,7 +25,7 @@ npm run dev
 # Key Technologies
 + HTML and CSS
 + JavaScript and Node.js.
-+ Webpack and Babel
++ React and Vite
 + Deployed on gh-pages
 
 # Members
