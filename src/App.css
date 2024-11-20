@@ -3,20 +3,14 @@
   background-image: linear-gradient(to bottom right, #303030, #000);
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
-/* .page {
-  background-color: #4f000b;
-  display: flex;
-
-  gap: 20px;
-} */
 
 .page_content {
   max-width: 1360px;
 }
 
 .title {
-  font-family: "Times New Roman", serif;
+  font-family: "Lexend", sans-serif;
+  font-weight: 900;
   box-sizing: content-box;
 }
