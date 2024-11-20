@@ -2,7 +2,12 @@
   background: url("../assets/Screenshot 2024-11-19 232800.png") no-repeat center
     transparent;
   background-size: cover;
-  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
 }
 
 .header__image {
@@ -12,7 +17,32 @@
 
 .header__title {
   text-align: justify;
+  background-color: #fff;
+  padding: 25px;
+  margin-top: 80px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .header__description {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 25px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    padding-top: 28px;
+    padding-bottom: 32px;
+  }
+
+  .header__logo {
+    height: 24px;
+    width: 126px;
+    margin-left: 27px;
+  }
 }
