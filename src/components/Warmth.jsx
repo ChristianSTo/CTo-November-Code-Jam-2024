@@ -9,26 +9,32 @@ import {
 
 import "../blocks/Warmth.css";
 
-function Warmth() {
+function Warmth({ onCityChange }) {
   const [mapSource, setMapSource] = useState(chicagoSrc);
 
   const currentSelect = useRef(null);
 
   const handleOnChange = () => {
-    if (currentSelect.current.value === "newyork") {
+    const city = currentSelect.current.value; // Define the city variable
+    if (city === "newyork") {
       setMapSource(newYorkSrc);
+      onCityChange("newyork");
     }
-    if (currentSelect.current.value === "chicago") {
+    if (city === "chicago") {
       setMapSource(chicagoSrc);
+      onCityChange("chicago");
     }
-    if (currentSelect.current.value === "losangeles") {
+    if (city === "losangeles") {
       setMapSource(losAngelesSrc);
+      onCityChange("losangeles");
     }
-    if (currentSelect.current.value === "houston") {
+    if (city === "houston") {
       setMapSource(houstonSrc);
+      onCityChange("houston");
     }
-    if (currentSelect.current.value === "phoenix") {
+    if (city === "phoenix") {
       setMapSource(phoenixSrc);
+      onCityChange("phoenix");
     }
   };
 
@@ -49,9 +55,9 @@ function Warmth() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <form className="warmth_filter-form">
+          <form className="warmth__filter-form">
             <label htmlFor="cities" className="warmth__label">
-              Major City:
+              Select Your City:
             </label>
             <select
               className="warmth__location-select"
