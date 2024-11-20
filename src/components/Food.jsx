@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "../blocks/Food.css";
-import helpingHand from "../assets/handOnly.png";
 
 function FoodSection({ selectedCity }) {
   const allResources = {
@@ -69,13 +68,20 @@ function FoodSection({ selectedCity }) {
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
-    setResources(allResources[selectedCity] || []); // Update resources based on selectedCity
+    setResources(allResources[selectedCity] || []);
   }, [selectedCity]);
+
+  const formatCityName = (city) => {
+    const cityNames = {
+      newyork: "New York",
+      losangeles: "Los Angeles",
+    };
+    return cityNames[city] || city.charAt(0).toUpperCase() + city.slice(1);
+  };
 
   return (
     <section className="food" id="food">
       <div className="food__container">
-        {/* Left Side: Food Resources */}
         <div className="food__carousel">
           {resources.length > 0 ? (
             resources.map((resource) => (
@@ -102,16 +108,17 @@ function FoodSection({ selectedCity }) {
               </div>
             ))
           ) : (
-            <p>No food resources available for {selectedCity}.</p>
+            <p>
+              No food resources available for {formatCityName(selectedCity)}.
+            </p>
           )}
         </div>
 
-        {/* Right Side: Title and Subtitle */}
         <div className="food__details">
           <div className="food__intro">
             <h2 className="food__title title">
               Feeding <br />
-              {selectedCity.toUpperCase()}
+              {formatCityName(selectedCity)}
             </h2>
             <p className="food__subtitle">
               Celebrate Thanksgiving by connecting with local food resources and

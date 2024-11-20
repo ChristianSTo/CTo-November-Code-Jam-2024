@@ -2,7 +2,7 @@
 
 ## Team
 
-Angel, Christian To, Luci, Maurice
+Angel Juarez, Christian To, Luci, Maurice
 
 # Description
 
