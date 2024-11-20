@@ -14,7 +14,7 @@
   margin: 0px auto;
   padding: 10px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  transition: max-height 0.3s ease, bottom 0.3s ease;
   box-sizing: border-box;
 }
 
@@ -42,7 +42,7 @@
   border-radius: 5px 5px 0px 0px;
 }
 
-@media (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .shelter-button {
     width: 75px;
   }

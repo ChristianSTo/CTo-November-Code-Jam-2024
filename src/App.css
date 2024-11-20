@@ -12,6 +12,6 @@
 .title {
   font-family: "Lexend", sans-serif;
   font-weight: 900;
-  font-size: 50px;
   box-sizing: content-box;
+  color: #000;
 }
