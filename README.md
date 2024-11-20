@@ -8,8 +8,7 @@ At Helping Hands, we believe in the power of community and the warmth that comes
 
 
 # Design Structure
-[[Figma](https://www.figma.com/design/EKtADmcqQ5oBP9f9lgOwDs/SeptemberCodeJam2024?node-id=0-1&node-type=canvas&t=df0nDbtSYhBFV00C-0)
-](https://www.figma.com/design/D3foRWi22dTCpUZbw8UtWg/Nov.-Code-Jam?node-id=0-1&node-type=canvas&t=IFpRmwKpzi7MzNks-0)
+https://www.figma.com/design/D3foRWi22dTCpUZbw8UtWg/Nov.-Code-Jam?node-id=0-1&node-type=canvas&t=fjtTTWbd5VCPzuol-0
 # Live Website
 
 # Run it locally
