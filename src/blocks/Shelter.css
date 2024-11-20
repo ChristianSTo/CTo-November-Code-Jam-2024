@@ -4,7 +4,12 @@
   justify-content: center;
   align-items: center;
   margin: 0px;
-  padding: 0px;
+  padding: 50px 25px 50px 0px;
+  background: url("../assets/andre-benz-CR0E20Of7yU-unsplash.jpg") no-repeat
+    center transparent;
+  background-size: cover;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
 }
 
 .shelter__container {
@@ -33,7 +38,15 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: #f0f8ff;
+  /* background-color: #f0f8ff; */
+  background: linear-gradient(
+    to right,
+    rgba(240, 248, 255, 0.75),
+    rgba(240, 248, 255, 0.9),
+    rgba(240, 248, 255, 0.95),
+    #f0f8ff
+  );
+
   max-width: 1000px;
   width: 100%;
   height: 400px;
@@ -123,7 +136,7 @@
 
 @media (max-width: 1150px) {
   .shelter {
-    /* padding: 15px; */
+    padding: 0px 25px 50px 25px;
   }
 
   .shelter__container {
@@ -154,6 +167,10 @@
 }
 
 @media (max-width: 750px) {
+  .shelter {
+    padding: 0px 25px 50px 25px;
+  }
+
   .shelter__intro {
     max-width: 270px;
     height: 50px;
