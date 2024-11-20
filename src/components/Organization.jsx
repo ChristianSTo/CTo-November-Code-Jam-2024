@@ -49,7 +49,7 @@ function Organization() {
                 alt="arizona food icon"
                 className="organization__list-item_icon"
               />
-              United Way World wide
+              United Way World Wide
             </a>
           </li>
           <li className="organization__list-item">

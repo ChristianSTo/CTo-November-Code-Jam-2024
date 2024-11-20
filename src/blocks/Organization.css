@@ -11,7 +11,6 @@
 .organization__title {
   background-color: #f0f8ff;
   text-align: center;
-
   margin: 25px auto 0px;
   padding: 25px;
   border-radius: 25px;
@@ -33,6 +32,9 @@
 
 .organization__list-item {
   margin: 25px;
+  background-color: #720026;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 .organization__list-item_link {
