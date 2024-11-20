@@ -1,5 +1,5 @@
 import "../blocks/Nav.css";
-import helpingHand from "../assets/goodHand.svg";
+import helpingHand from "../assets/handNavLogo.png";
 
 function Nav() {
   return (

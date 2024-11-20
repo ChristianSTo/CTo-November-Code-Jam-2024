@@ -41,27 +41,12 @@
   transform: translateY(-15px);
 }
 
-.food__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin: auto 0px;
-  background: #000;
-  color: white;
-  width: 50px;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-family: "Lexend", sans-serif;
-  font-size: 18px;
-  z-index: 1;
-}
-
 .food__resource-button {
-  border: none;
+  border-radius: 15px;
   cursor: pointer;
+  padding: 15px;
+  font-size: 16px;
+  background-color: white;
 }
 
 /* Right side */
@@ -75,6 +60,7 @@
   margin: 0px;
   margin-left: 50px;
   margin-bottom: 10px;
+  z-index: 1;
 }
 
 .food__subtitle {
@@ -87,7 +73,6 @@
 .food__intro {
   display: flex;
   justify-content: center;
-  align-items: left;
   background-color: #f0f8ff;
   max-width: 1000px;
   width: 100%;
@@ -95,6 +80,7 @@
   border-radius: 25px 0px 0px 25px;
   flex-direction: column;
   margin-left: 40px;
+  align-items: flex-start;
 }
 
 @media screen and (max-width: 890px) {

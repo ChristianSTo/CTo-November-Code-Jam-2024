@@ -8,6 +8,8 @@
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  padding-top: var(--header-padding-top, 165px);
+  transition: all 0.3s ease;
 }
 
 .header__image {
@@ -37,7 +39,7 @@
 
 @media screen and (max-width: 600px) {
   .header {
-    padding-top: 28px;
+    padding-top: var(--header-padding-top, 206px);
     padding-bottom: 32px;
   }
 
