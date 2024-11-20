@@ -39,7 +39,7 @@ function Warmth({ onCityChange }) {
   };
 
   return (
-    <section className="warmth">
+    <section className="warmth" id="clothes">
       <div className="warmth__container">
         <div className="warmth__info">
           <h2 className="warmth__title title">Keeping the Community Warm</h2>

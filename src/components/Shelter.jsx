@@ -39,7 +39,7 @@ function Shelter() {
   };
 
   return (
-    <section className="shelter">
+    <section className="shelter" id="shelters">
       <div className="shelter__container">
         <h2 className="shelter__title title">Sheltering the Community</h2>
 

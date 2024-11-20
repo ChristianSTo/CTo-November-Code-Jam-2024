@@ -13,13 +13,8 @@ function Nav() {
 
         <ul className="nav__links">
           <li>
-            <a href="#clothing" className="nav__link">
-              Clothing
-            </a>
-          </li>
-          <li>
-            <a href="#pantries" className="nav__link">
-              Pantries
+            <a href="#about" className="nav__link">
+              About
             </a>
           </li>
           <li>
@@ -28,8 +23,18 @@ function Nav() {
             </a>
           </li>
           <li>
-            <a href="#about" className="nav__link">
-              About
+            <a href="#clothes" className="nav__link">
+              Clothes
+            </a>
+          </li>
+          <li>
+            <a href="#food" className="nav__link">
+              Food
+            </a>
+          </li>
+          <li>
+            <a href="#organizations" className="nav__link">
+              Organizations
             </a>
           </li>
         </ul>

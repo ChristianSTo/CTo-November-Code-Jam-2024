@@ -8,10 +8,8 @@ function Header() {
     <>
       <Nav />
       <header className="header">
-        <h1 className="header__title">
-          <span className="header__span-accent">
-            Leading a helping hand to our community
-          </span>{" "}
+        <h1 className="header__title title">
+          <span className="header__span-accent">Helping the Community</span>{" "}
         </h1>
 
         <p className="header__description">
