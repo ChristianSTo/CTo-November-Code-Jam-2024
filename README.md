@@ -37,5 +37,5 @@ npm run dev
 
 - [Christian To](https://github.com/ChristianSTo)
 - [Luci To](https://github.com/Lu-guzman)
-- [Angel Juarez GitHub:](https://github.com/ajuarezse)
+- [Angel Juarez - GitHub](https://github.com/ajuarezse)
 - ...
