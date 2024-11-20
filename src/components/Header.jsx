@@ -11,12 +11,6 @@ function Header() {
         <h1 className="header__title title">
           <span className="header__span-accent">Helping the Community</span>{" "}
         </h1>
-
-        <p className="header__description">
-          Welcome! Project Helping Hand is a nonprofit organization that
-          provides resources to Food Pantries, Free Clothing Stores, and Housing
-          shelters across America. We care, and Strive to lend a helping hand.
-        </p>
       </header>
     </>
   );

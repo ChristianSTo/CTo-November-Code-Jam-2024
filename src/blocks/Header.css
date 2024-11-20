@@ -37,9 +37,16 @@
   max-width: 400px;
 }
 
+@media screen and (max-width: 800px) {
+  .header {
+    padding-top: var(--header-padding-top, 250px);
+    padding-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header {
-    padding-top: var(--header-padding-top, 206px);
+    padding-top: var(--header-padding-top, 250px);
     padding-bottom: 32px;
   }
 

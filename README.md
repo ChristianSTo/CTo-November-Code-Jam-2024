@@ -8,9 +8,10 @@ At Helping Hands, we believe in the power of community and the warmth that comes
 
 
 # Design Structure
-[[Figma](https://www.figma.com/design/EKtADmcqQ5oBP9f9lgOwDs/SeptemberCodeJam2024?node-id=0-1&node-type=canvas&t=df0nDbtSYhBFV00C-0)
-](https://www.figma.com/design/D3foRWi22dTCpUZbw8UtWg/Nov.-Code-Jam?node-id=0-1&node-type=canvas&t=IFpRmwKpzi7MzNks-0)
+https://www.figma.com/design/D3foRWi22dTCpUZbw8UtWg/Nov.-Code-Jam?node-id=0-1&node-type=canvas&t=fjtTTWbd5VCPzuol-0
+
 # Live Website
+https://christiansto.github.io/CTo-November-Code-Jam-2024/
 
 # Run it locally
 ```
@@ -24,11 +25,11 @@ npm run dev
 # Key Technologies
 + HTML and CSS
 + JavaScript and Node.js.
-+ Webpack and Babel
++ React and Vite
 + Deployed on gh-pages
 
 # Members
 + [Christian To](https://github.com/ChristianSTo)
-+ ...
++ [Luci To](https://github.com/Lu-guzman)
 + ...
 + ...
