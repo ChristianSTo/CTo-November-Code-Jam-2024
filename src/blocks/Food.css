@@ -42,11 +42,21 @@
 }
 
 .food__resource-button {
-  border-radius: 15px;
   cursor: pointer;
-  padding: 15px;
-  font-size: 16px;
+  text-decoration: none;
   background-color: white;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.food__resource-button:hover {
+  color: white;
+  background-color: black;
 }
 
 /* Right side */
