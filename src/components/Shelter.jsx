@@ -119,6 +119,9 @@ function Shelter() {
                   <br></br>
                   <br></br>
                   Let's cheer each other on this Thanksgiving!
+                  <br></br>
+                  <br></br>
+                  Click the city icon on the bottom left to start searching.
                 </p>
               </div>
             )}
