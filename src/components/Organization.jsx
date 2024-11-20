@@ -7,7 +7,7 @@ import noKidHungryLogo from "../assets/noKidHungryLogo.jpeg";
 function Organization() {
   return (
     <>
-      <section className="organization">
+      <section className="organization" id="organizations">
         <h2 className="organization__title title">Nationwide Organizations</h2>
         <ul className="organization__lists">
           <li className="organization__list-item">
