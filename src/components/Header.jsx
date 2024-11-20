@@ -9,7 +9,6 @@ function Header() {
           alt="Project Helping Hand logo"
           className="nav__logo"
         />
-
         <ul className="nav__links">
           <li>
             <a href="#clothing" className="nav__link">
@@ -32,6 +31,7 @@ function Header() {
             </a>
           </li>
         </ul>
+        ``
       </nav>
 
       <img

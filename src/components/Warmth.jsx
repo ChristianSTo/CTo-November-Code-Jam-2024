@@ -42,6 +42,7 @@ function Warmth() {
             Find locations for clothing donations!
           </p>
           <iframe
+            title="Map of clothes donation centers"
             className="warmth__map"
             src={mapSource}
             allowFullScreen=""
