@@ -1,0 +1,18 @@
+.header {
+  background: url("../assets/Screenshot 2024-11-19 232800.png") no-repeat center
+    transparent;
+  background-size: cover;
+  height: 500px;
+}
+
+.header__image {
+  height: 100px;
+  width: 100px;
+}
+
+.header__title {
+  text-align: justify;
+}
+
+.header__description {
+}
