@@ -5,7 +5,14 @@
   align-items: center;
   margin: 0px;
   padding: 25px 20px;
-  background-image: linear-gradient(to bottom, #051316, #17120f);
+  background: linear-gradient(
+    to bottom,
+    #051316,
+    #051316,
+    #051316,
+    #17120f,
+    #303030
+  );
   font-family: "Lexend", sans-serif;
   font-weight: 400;
 }
@@ -92,7 +99,7 @@
   margin: 25px auto;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .warmth__container {
     gap: 8px;
   }
@@ -104,7 +111,7 @@
   }
 
   .warmth_filter-form {
-    font-size: 13px;
+    font-size: 16px;
     max-width: 165px;
     padding: 0px 15px 25px;
     border-radius: 0px 0px 15px 15px;
@@ -125,7 +132,7 @@
   }
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .warmth__map {
     width: 250px;
     height: 250px;
@@ -141,7 +148,7 @@
   }
 }
 
-@media (max-width: 340px) {
+@media screen and (max-width: 340px) {
   .warmth__info {
     max-width: 300px;
     height: 450px;

@@ -34,6 +34,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease;
+  font-family: "Lexend", sans-serif;
 }
 
 .food__card:hover {
@@ -41,16 +42,21 @@
 }
 
 .food__button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto 0px;
+  background: #000;
   color: white;
+  width: 50px;
   border: none;
   padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  font-family: "Lexend", sans-serif;
   font-size: 18px;
+  z-index: 1;
 }
 
 .food__button:hover {
@@ -73,9 +79,9 @@
 
 .food__title {
   font-size: 50px;
-  margin-left: -127px;
+  margin: 0px;
+  margin-left: 50px;
   margin-bottom: 10px;
-  color: #333;
 }
 
 .food__subtitle {
@@ -87,8 +93,8 @@
 
 .food__intro {
   display: flex;
-  justify-content: left;
-  align-items: center;
+  justify-content: center;
+  align-items: left;
   background-color: #f0f8ff;
   max-width: 1000px;
   width: 100%;
@@ -96,4 +102,40 @@
   border-radius: 25px 0px 0px 25px;
   flex-direction: column;
   margin-left: 40px;
+}
+
+@media screen and (max-width: 890px) {
+  .food__container {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .food__title {
+    font-size: 20px;
+    max-width: 270px;
+  }
+
+  .food__intro {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .food__intro {
+    margin: 0px auto;
+    border-radius: 25px;
+    height: 250px;
+  }
+
+  .food__card {
+    width: 250px;
+    padding: 25px;
+    margin: 0px auto;
+  }
+
+  .food__button {
+    width: 25px;
+    height: 200px;
+  }
 }

@@ -41,9 +41,7 @@ function Shelter() {
   return (
     <section className="shelter">
       <div className="shelter__container">
-        <div className="shelter__intro">
-          <h2 className="shelter__title title">Sheltering the Community</h2>
-        </div>
+        <h2 className="shelter__title title">Sheltering the Community</h2>
 
         <div className="shelter__box">
           <ul className="shelter__grid">
@@ -60,7 +58,6 @@ function Shelter() {
             </li>
           </ul>
 
-          {/* <div className="shelter__body"> */}
           <div className="shelter__screen" style={screenStyle}>
             {tab === "Why" ? (
               <img
@@ -126,7 +123,6 @@ function Shelter() {
               </div>
             )}
           </div>
-          {/* </div> */}
         </div>
       </div>
     </section>
