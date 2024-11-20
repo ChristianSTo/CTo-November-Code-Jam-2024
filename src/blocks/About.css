@@ -29,6 +29,7 @@
   font-family: "Lexend", sans-serif;
   font-weight: 400;
   text-align: center;
+  border: 10px solid #ff7f51;
 }
 
 .about__info:hover {

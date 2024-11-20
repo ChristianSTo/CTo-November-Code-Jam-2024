@@ -33,6 +33,7 @@
   max-width: 1000px;
   width: 100%;
   border-radius: 25px;
+  border: 10px solid #ff7f51;
 }
 
 .warmth__title {
@@ -191,6 +192,22 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .warmth__location-select {
+    width: 50px;
+    height: 50px;
+    bottom: 55px;
+    left: 5px;
+  }
+
+  .warmth__effect {
+    width: 50px;
+    height: 50px;
+    bottom: 55px;
+    left: 5px;
+  }
+}
+
 @media screen and (max-width: 340px) {
   .warmth__info {
     max-width: 300px;
@@ -225,7 +242,7 @@
     transform: scale(1);
   }
   100% {
-    transform: scale(2);
+    transform: scale(1.5);
     opacity: 0;
   }
 }
