@@ -36,6 +36,6 @@ npm run dev
 # Members
 
 - [Christian To](https://github.com/ChristianSTo)
-- [Luci To](https://github.com/Lu-guzman)
+- [Luci Brambila Guzman](https://github.com/Lu-guzman)
 - [Angel Juarez - GitHub](https://github.com/ajuarezse)
 - ...
