@@ -82,7 +82,10 @@ function FoodSection() {
         {/* Right side: Title and Subtitle */}
         <div className="food__details">
           <div className="food__intro">
-            <h2 className="food__title">Feeding the Community</h2>
+            <h2 className="food__title title">
+              Feeding <br />
+              the <br /> Community
+            </h2>
             <p className="food__subtitle">
               Celebrate Thanksgiving by connecting with local food resources and
               spreading joy!
