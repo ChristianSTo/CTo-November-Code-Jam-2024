@@ -15,7 +15,10 @@ body {
   /* place-items: center; */
   /* min-width: 320px; */
   min-height: 100vh;
-  background-color: orangered;
+  background-color: #fff;
+  background-image: linear-gradient(to bottom right, #303030, #000);
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

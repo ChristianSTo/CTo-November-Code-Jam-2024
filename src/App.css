@@ -1,5 +1,8 @@
-.page {
-  background-color: orangered;
+.app {
+  background-color: #fff;
+  background-image: linear-gradient(to bottom right, #303030, #000);
+  display: flex;
+  flex-direction: column;
 }
 
 .page_content {
