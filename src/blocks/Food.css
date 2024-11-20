@@ -59,16 +59,9 @@
   z-index: 1;
 }
 
-.food__button:hover {
-  background: #0056b3;
-}
-
-.food__button-prev {
-  left: 25px;
-}
-
-.food__button-next {
-  right: 25px;
+.food__resource-button {
+  border: none;
+  cursor: pointer;
 }
 
 /* Right side */

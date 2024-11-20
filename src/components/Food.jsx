@@ -6,56 +6,61 @@ function FoodSection({ selectedCity }) {
     chicago: [
       {
         id: 1,
-        name: "Chicago Food Pantry",
-        description: "Providing meals and groceries to those in need.",
-        location: "123 Windy St",
-        contact: "555-1111",
-        hours: "Mon-Fri: 9 AM - 5 PM",
-        link: "https://example.com/chicago-food-pantry",
+        name: "Greater Chicago Food Depository",
+        description:
+          "We strive to end hunger by connecting our neighbors with healthy food and advancing solutions that address the root causes of hunger.",
+        location: "4100 W Ann Lurie Pl, Chicago, IL 60632",
+        contact: "(773) 247-3663",
+        hours: "Mon-Fri: 8:30 AM - 5 PM",
+        link: "https://www.chicagosfoodbank.org/",
       },
     ],
     newyork: [
       {
         id: 2,
-        name: "New York Soup Kitchen",
-        description: "Hot meals served daily in Manhattan.",
-        location: "456 Broadway",
-        contact: "555-2222",
-        hours: "Everyday: 10 AM - 6 PM",
-        link: "https://example.com/ny-soup-kitchen",
+        name: "Food Bank For New York City - Community Kitchen & Food Pantry",
+        description:
+          "As the city's largest hunger-relief organization, our mission is to end hunger by organizing food, information and support for community survival and ...",
+        location: "252 W 116th St, New York, NY 10026",
+        contact: "(212) 566-7855",
+        hours: "M/W/F 4 PM - 6 PM, T/Th 11 AM - 3:30 PM",
+        link: "https://www.foodbanknyc.org/",
       },
     ],
     losangeles: [
       {
         id: 3,
-        name: "Los Angeles Harvest Center",
-        description: "Free food and groceries in LA.",
-        location: "789 Sunset Blvd",
-        contact: "555-3333",
-        hours: "Weekdays: 8 AM - 4 PM",
-        link: "https://example.com/la-harvest-center",
+        name: "Los Angeles Regional Food Bank",
+        description:
+          "Give to the LA Food Bank — Fight Hunger in LA County. Your gift today is vital to distributing food to our neighbors. Your donation today will help us to continue our work and provide food to your neighbors.",
+        location: "2300 Pellissier Pl, City of Industry, CA 90601",
+        contact: "(323) 234-3030",
+        hours: "Mon-Fri: 8 AM - 5 PM",
+        link: "https://www.lafoodbank.org/",
       },
     ],
     houston: [
       {
         id: 4,
-        name: "Houston Helping Hands",
-        description: "Groceries for the holidays in Houston.",
-        location: "321 Space City Ave",
-        contact: "555-4444",
-        hours: "Weekends: 10 AM - 2 PM",
-        link: "https://example.com/houston-helping-hands",
+        name: "Houston Food Bank",
+        description:
+          "Houston Food Bank ... America's largest food bank in distribution leading hunger relief in 18 southeast Texas counties",
+        location: " 535 Portwall St, Houston, TX 77029",
+        contact: "(713) 223-3700",
+        hours: "Mon-Sat: 8 AM - 5 PM",
+        link: "https://www.houstonfoodbank.org/",
       },
     ],
     phoenix: [
       {
         id: 5,
-        name: "Phoenix Community Kitchen",
-        description: "Providing meals for Phoenix residents.",
-        location: "654 Sun St",
-        contact: "555-5555",
-        hours: "Everyday: 9 AM - 6 PM",
-        link: "https://example.com/phoenix-kitchen",
+        name: "Nourish Phoenix",
+        description:
+          "We need help daily in our clothing closet, sorting room and food pantry! Register today for a morning or afternoon shift, Monday-Friday. Volunteer Now ...",
+        location: "501 S 9th Avenue, Phoenix, AZ 85007",
+        contact: "(602) 254-7450",
+        hours: "Everyday: 9 AM - 11 AM",
+        link: "https://nourishphx.org/",
       },
     ],
   };
@@ -74,9 +79,7 @@ function FoodSection({ selectedCity }) {
           {resources.length > 0 ? (
             resources.map((resource) => (
               <div key={resource.id} className="food__card">
-                <h3 className="food__resource-name">
-                  {selectedCity.toUpperCase()}
-                </h3>
+                <h3 className="food__resource-name">{resource.name}</h3>
                 <p className="food__resource-description">
                   {resource.description}
                 </p>
@@ -107,7 +110,7 @@ function FoodSection({ selectedCity }) {
           <div className="food__intro">
             <h2 className="food__title title">
               Feeding <br />
-              the <br /> Community
+              {selectedCity.toUpperCase()}
             </h2>
             <p className="food__subtitle">
               Celebrate Thanksgiving by connecting with local food resources and
