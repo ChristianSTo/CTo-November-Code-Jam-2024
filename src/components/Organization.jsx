@@ -8,7 +8,7 @@ function Organization() {
   return (
     <>
       <section className="organization">
-        <h2 className="organization__title">Nationwide Organizations</h2>
+        <h2 className="organization__title title">Nationwide Organizations</h2>
         <ul className="organization__lists">
           <li className="organization__list-item">
             <a

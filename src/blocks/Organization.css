@@ -3,24 +3,32 @@
   background-image: linear-gradient(to bottom right, #303030, #000);
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
 
 .organization__title {
   background-color: #f0f8ff;
   text-align: center;
-  max-width: 350px;
+
   margin: 25px auto 0px;
   padding: 25px;
   border-radius: 25px;
-  font-size: 24px;
+  font-size: 50px;
 }
 .organization__lists {
+  max-width: 700px;
   list-style-type: none;
   font-size: 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   align-items: center;
   flex-direction: column;
   border-radius: 25px;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
 }
 
 .organization__list-item {
@@ -28,9 +36,11 @@
 }
 
 .organization__list-item_link {
+  margin: 0, auto;
   text-decoration: none;
   color: #f0f8ff;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   transition: opacity 0.5s;
 }
@@ -40,8 +50,20 @@
 }
 
 .organization__list-item_icon {
-  height: 25px;
-  width: 25px;
+  height: 50px;
+  width: 50px;
   margin-right: 20px;
   border-radius: 8px;
+}
+
+@media screen and (max-width: 600px) {
+  .organization__title {
+    font-size: 20px;
+    max-width: 270px;
+    padding: 15px;
+  }
+
+  .organization__lists {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

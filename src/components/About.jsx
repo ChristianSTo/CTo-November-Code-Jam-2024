@@ -6,7 +6,7 @@ function About() {
     <>
       <section className="about">
         <div className="about__container">
-          <h2 className="about__title">Helping hands</h2>
+          <h2 className="about__title title">Helping hands</h2>
 
           <p className="about__info">
             At Helping Hands, we believe in the power of community and the
