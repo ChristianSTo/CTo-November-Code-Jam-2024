@@ -55,9 +55,9 @@ function Warmth({ onCityChange }) {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-          <form className="warmth_filter-form">
+          <form className="warmth__filter-form">
             <label htmlFor="cities" className="warmth__label">
-              Major City:
+              Select Your City:
             </label>
             <select
               className="warmth__location-select"

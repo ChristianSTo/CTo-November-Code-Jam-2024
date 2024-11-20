@@ -61,33 +61,48 @@
   padding: 0px;
 }
 
-.warmth_filter-form {
+.warmth__filter-form {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
   font-size: 16px;
+  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 250px;
+  max-width: 100px;
   width: 100%;
-  height: 20px;
-  margin: 0px auto 25px;
-  padding: 25px;
+  height: 100px;
   gap: 15px;
-  background-color: aliceblue;
-  border-radius: 0px 0px 45px 45px;
   transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.warmth__label {
+  display: none;
 }
 
 .warmth__location-select {
-  font-size: 16px;
-  width: 125px;
-  height: 35px;
-  border: 2px solid #000;
-  margin: 0px auto;
-  padding: 5px;
+  font-size: 10px;
+  color: transparent;
+  width: 75px;
+  height: 75px;
+  border: 5px solid #000;
+  border-radius: 50%;
+  background: url("../assets/cityIcon.svg") no-repeat center;
+  background-size: contain;
+  background-color: aliceblue;
+  transition: opacity 0.3s ease;
 }
 
 .warmth__location-select:hover {
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.warmth__location-select:focus {
+  outline: none;
 }
 
 .warmth__map {
@@ -103,6 +118,7 @@
   .warmth__container {
     gap: 8px;
   }
+
   .warmth__description {
     font-size: 16px;
     max-width: 250px;
@@ -110,41 +126,39 @@
     border-radius: 15px 15px 0px 0px;
   }
 
-  .warmth_filter-form {
-    font-size: 16px;
-    max-width: 165px;
-    padding: 0px 15px 25px;
-    border-radius: 0px 0px 15px 15px;
-    margin-bottom: 0px;
-    gap: 3px;
-  }
-
-  .warmth__location-select {
-    font-size: 10px;
-    width: 90px;
-    height: 25px;
-    border: 1px solid #000;
-  }
-
   .warmth__map {
     width: 525px;
     height: 350px;
   }
 }
-
+@media screen and (max-width: 620px) {
+  .warmth__location-select {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #000;
+  }
+}
 @media screen and (max-width: 600px) {
   .warmth__map {
     width: 250px;
     height: 250px;
   }
+
   .warmth__title {
     font-size: 20px;
     max-width: 270px;
     padding: 15px;
   }
+
   .warmth__container {
     gap: 0px;
     flex-direction: column;
+  }
+
+  .warmth__filter-form {
+    bottom: 30px;
+    align-items: flex-start;
+    left: 8px;
   }
 }
 
