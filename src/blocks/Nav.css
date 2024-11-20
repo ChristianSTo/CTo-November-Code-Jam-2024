@@ -1,48 +1,103 @@
 .nav__logo {
-  height: 200px;
-  width: 200px;
+  max-height: 27px;
+  min-width: 120px;
+  transition: all 0.3s ease;
 }
 
 .nav__links {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 10px;
   list-style: none;
-  text-decoration: none;
-
   padding: 15px;
-  height: 25px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .nav__link {
   text-decoration: none;
   background-color: white;
   color: black;
-  padding: 15px;
-  max-width: 100px;
-  height: 25px;
+  padding: 10px 15px;
   border-radius: 15px;
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Lexend", sans-serif;
-  font-weight: 400px;
+  font-weight: 400;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
+
 .nav__link:hover {
   color: white;
   background-color: black;
-  transition: background-color 2s ease;
 }
+
 .nav__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 45px;
-  padding: 25px;
+  height: auto;
+  padding: 15px 20px;
   position: fixed;
   background-color: black;
   width: 100%;
   z-index: 2;
 }
 
+/* Tablet and smaller screens */
 @media screen and (max-width: 800px) {
+  .nav__logo {
+    height: 80px;
+    width: 80px;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 20px; /* Ensure enough spacing between buttons */
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure buttons don’t overflow container */
+  }
+
+  .nav__link {
+    font-size: 14px;
+    padding: 10px 20px; /* Increase padding for better visibility */
+    width: 80%; /* Buttons take up a consistent width */
+    text-align: center;
+  }
+}
+
+/* Mobile and smaller screens */
+@media screen and (max-width: 600px) {
+  .nav__container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__links {
+    flex-direction: column;
+    gap: 15px; /* Increased gap to avoid overlapping */
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav__link {
+    max-width: 90%;
+    text-align: center;
+    padding: 0px 20px; /* Ensure consistent padding */
+    font-size: 14px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    transition: all 0.3s ease;
+  }
+
+  .nav__link:hover {
+    color: black;
+    background-color: white;
+  }
 }

@@ -8,6 +8,8 @@
   align-items: center;
   flex-direction: column;
   padding: 25px;
+  padding-top: var(--header-padding-top, 165px);
+  transition: all 0.3s ease;
 }
 
 .header__image {
@@ -35,9 +37,16 @@
   max-width: 400px;
 }
 
+@media screen and (max-width: 800px) {
+  .header {
+    padding-top: var(--header-padding-top, 250px);
+    padding-bottom: 32px;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .header {
-    padding-top: 28px;
+    padding-top: var(--header-padding-top, 250px);
     padding-bottom: 32px;
   }
 

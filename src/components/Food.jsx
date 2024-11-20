@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../blocks/Food.css";
+import helpingHand from "../assets/handOnly.png";
 
 function FoodSection({ selectedCity }) {
   const allResources = {
@@ -96,7 +97,7 @@ function FoodSection({ selectedCity }) {
                   className="food__resource-button"
                   onClick={() => window.open(resource.link, "_blank")}
                 >
-                  More Info
+                  Visit Page
                 </button>
               </div>
             ))
