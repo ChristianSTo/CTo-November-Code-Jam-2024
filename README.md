@@ -38,4 +38,4 @@ npm run dev
 - [Christian To](https://github.com/ChristianSTo)
 - [Luci Brambila Guzman](https://github.com/Lu-guzman)
 - [Angel Juarez - GitHub](https://github.com/ajuarezse)
-- ...
+- [Maurice](https://github.com/Maurice284)
