@@ -82,6 +82,7 @@ function Warmth({ onCityChange }) {
                 Phoenix
               </option>
             </select>
+            <div className="warmth__effect"></div>
           </form>
         </div>
       </div>
