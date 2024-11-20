@@ -67,7 +67,7 @@ function FoodSection({ selectedCity }) {
   }, [selectedCity]);
 
   return (
-    <section className="food">
+    <section className="food" id="food">
       <div className="food__container">
         {/* Left Side: Food Resources */}
         <div className="food__carousel">

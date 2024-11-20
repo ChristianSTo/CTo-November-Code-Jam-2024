@@ -4,7 +4,7 @@ import aboutImage from "../assets/aboutImage.jpg";
 function About() {
   return (
     <>
-      <section className="about">
+      <section className="about" id="about">
         <div className="about__container">
           <h2 className="about__title title">Helping hands</h2>
 
