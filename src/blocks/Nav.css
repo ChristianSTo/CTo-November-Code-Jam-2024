@@ -44,7 +44,6 @@
   z-index: 2;
 }
 
-/* Tablet and smaller screens */
 @media screen and (max-width: 800px) {
   .nav__logo {
     height: 80px;
@@ -53,21 +52,20 @@
 
   .nav__links {
     flex-direction: column;
-    gap: 20px; /* Ensure enough spacing between buttons */
+    gap: 20px;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure buttons don’t overflow container */
+    width: 100%;
   }
 
   .nav__link {
     font-size: 14px;
-    padding: 10px 20px; /* Increase padding for better visibility */
-    width: 80%; /* Buttons take up a consistent width */
+    padding: 10px 20px;
+    width: 80%;
     text-align: center;
   }
 }
 
-/* Mobile and smaller screens */
 @media screen and (max-width: 600px) {
   .nav__container {
     flex-direction: column;
@@ -76,7 +74,7 @@
 
   .nav__links {
     flex-direction: column;
-    gap: 15px; /* Increased gap to avoid overlapping */
+    gap: 15px;
     align-items: center;
     padding: 10px;
     background-color: black;
@@ -88,7 +86,7 @@
   .nav__link {
     max-width: 90%;
     text-align: center;
-    padding: 0px 20px; /* Ensure consistent padding */
+    padding: 0px 20px;
     font-size: 14px;
     border: 1px solid white;
     background-color: transparent;
