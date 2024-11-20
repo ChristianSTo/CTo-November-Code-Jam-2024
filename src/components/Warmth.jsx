@@ -34,13 +34,21 @@ function Warmth() {
 
   return (
     <section className="warmth">
-      <h2 className="warmth__title title">Keeping the Community Warm</h2>
-
       <div className="warmth__container">
         <div className="warmth__info">
+          <h2 className="warmth__title title">Keeping the Community Warm</h2>
+
           <p className="warmth__description">
             Find locations for clothing donations!
           </p>
+          <iframe
+            title="Map of clothes donation centers"
+            className="warmth__map"
+            src={mapSource}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
           <form className="warmth_filter-form">
             <label htmlFor="cities" className="warmth__label">
               Major City:
@@ -70,14 +78,6 @@ function Warmth() {
             </select>
           </form>
         </div>
-
-        <iframe
-          className="warmth__map"
-          src={mapSource}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
     </section>
   );

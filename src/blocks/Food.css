@@ -1,0 +1,99 @@
+.food {
+  padding: 2rem;
+  background: black;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+
+.food__title {
+  font-size: 2.5rem;
+  color: #b8583c;
+  margin-bottom: 1rem;
+}
+
+.food__subtitle {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.food__search-container {
+  margin-bottom: 2rem;
+}
+
+.food__search-input {
+  width: 80%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #e76f51;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fef5e7;
+}
+
+.food__search-input:focus {
+  border-color: #b8583c;
+}
+
+.food__resources {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.food__resource-card {
+  background: #fff8e5;
+  border: 1px solid #d1a872;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food__resource-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.food__resource-name {
+  font-size: 1.5rem;
+  color: #b8583c;
+  margin-bottom: 0.5rem;
+}
+
+.food__resource-description {
+  color: #7c4b3c;
+  margin-bottom: 1rem;
+}
+
+.food__resource-location,
+.food__resource-contact,
+.food__resource-hours {
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.food__resource-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #e76f51;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.food__resource-button:hover {
+  background-color: #f4a261;
+}
+
+.food__no-results {
+  color: #7c4b3c;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
