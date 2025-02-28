@@ -25,6 +25,10 @@ https://christiansto.github.io/CTo-November-Code-Jam-2024/
 ## Demo
 https://www.youtube.com/live/illc9Z9K8Pk?si=Dj-go1eFp9V6CoF8&t=1231
 
+## Will improve on:
+- UX/UI, having a hamburger menu for mobile viewports
+- Accessibility with contrast, readability and semantic tags
+
 ## Run it locally
 
 ```
