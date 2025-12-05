@@ -7,6 +7,10 @@
   border-radius: 25px;
 }
 
+.nav__hamburger {
+  display: none;
+}
+
 .nav__links {
   display: flex;
   justify-content: space-between;
@@ -56,7 +60,31 @@
     width: 80px;
   }
 
+  .nav__hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Lexend", sans-serif;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border-radius: 15px;
+    border: none;
+    width: 50px;
+    margin: 10px;
+    padding-top: 13px;
+    transition: all 0.3s ease-in;
+  }
+
+  .nav__hamburger:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+  }
+
   .nav__links {
+    display: none;
     flex-direction: column;
     gap: 20px;
     justify-content: center;

@@ -1,7 +1,19 @@
+import { useState } from "react";
 import "../blocks/Nav.css";
 import helpingHand from "../assets/heartLogo.svg";
 
 function Nav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuLinksStyle, setMenuLinksStyle] = useState({ display: "" });
+  const menuHandler = () => {
+    if (!isMenuOpen) {
+      setIsMenuOpen(true);
+      setMenuLinksStyle({ display: "flex" });
+    } else {
+      setIsMenuOpen(false);
+      setMenuLinksStyle({ display: "none" });
+    }
+  };
   return (
     <nav className="nav">
       <div className="nav__container">
@@ -10,8 +22,10 @@ function Nav() {
           alt="Project Helping Hand logo"
           className="nav__logo"
         />
-
-        <ul className="nav__links">
+        <button type="button" className="nav__hamburger" onClick={menuHandler}>
+          ︾
+        </button>
+        <ul className="nav__links" style={menuLinksStyle}>
           <li>
             <a href="#about" className="nav__link">
               About
